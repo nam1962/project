@@ -6,5 +6,3 @@ if radius > 0
 else
   return 0
 end
-puts circle_area
-end
