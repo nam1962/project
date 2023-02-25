@@ -62,5 +62,5 @@ def sorted_pairs(array)
   array.each_slice(2) do |element|
     array_temp << element.sort
   end
-  return array_temp
+  return array_temp.
 end
