@@ -20,10 +20,8 @@ class MealRepository
     return @meals
   end
 
-  def find(meal)
-    @csv_file.foreach(filepath, headers: :first_row) do |row|
-      puts "#{row[:name]}"
-    end
+  def find(meal_id)
+    @meals.find {|meal| meal.id == meal_id}
   end
 
   private
