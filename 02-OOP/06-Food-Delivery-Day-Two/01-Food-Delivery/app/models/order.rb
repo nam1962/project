@@ -8,9 +8,14 @@ class Order
     @customer = attributes[:customer]
     @employee = attributes[:employee]
   end
-  
+
   def delivered?
     @delivered
    end
+
+   def delivered!
+    @delivered = true
+   end
+   
 
 end
