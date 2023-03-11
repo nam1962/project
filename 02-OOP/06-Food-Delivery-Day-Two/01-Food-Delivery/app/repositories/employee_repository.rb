@@ -30,6 +30,12 @@ class EmployeeRepository
     end
   end
 
+  def find_by_username(username)
+    @employees.find do |employee|
+      employee.username == username
+    end
+  end
+
   private
 
   def save_to_csv
