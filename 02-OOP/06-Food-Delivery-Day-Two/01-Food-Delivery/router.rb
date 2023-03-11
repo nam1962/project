@@ -9,26 +9,17 @@ class Router
   end
 
   def run
-    employee = @sessions_controller.login
+    @employee = @sessions_controller.login
     while @running
       display_tasks
+      puts display_manager_tasks if @employee.manager?
+      puts display_rider_tasks if @employee.rider?
       action = gets.chomp.to_i
       route_action(action)
     end
   end
 
   private
-
-# def Login
-#   puts '*' * 30
-#   puts 'Welcome to the food delivery'
-#   puts '*' * 30
-#   puts "LOGIN"
-#   print "> "
-#   puts "username?"
-#   puts "password?"
-#   puts "Welcome #{username}"
-# end
 
 
   def display_tasks
