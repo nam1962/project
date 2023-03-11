@@ -2,7 +2,6 @@ require 'csv'
 require_relative "../models/meal"
 
 class MealRepository
-
   def initialize(csv_file)
     @csv_file = csv_file
     @next_id = 1
@@ -14,38 +13,38 @@ class MealRepository
     meal.id = @next_id
     @next_id += 1
     @meals << meal
-    save_csv
+    save_to_csv
   end
 
   def all
     @meals
   end
 
+  def find(id)
+    @meals.find do |meal|
+      meal.id == id.to_i
+    end
+  end
+  # GRANDEPIEEEEEEEEEEERRREEEEEEEE!!!!
 
   private
 
-  # dupliquer une ligne => ctrl + shift + D
-  # séléctionner la même valeur plusieurs fois dans le meme fichier => on séléctionne puis ctrl + D
-
-  # %w[id name price]
-  # ["id", "name", "price"]
-
-  def load_csv
-    CSV.foreach(@csv_file, headers: :first_row, header_converters: :symbol) do |row|
-      row[:id] = row[:id].to_i
-      row[:price] = row[:price].to_i
-      @meals << Meal.new(row)
-    end
-    @next_id = @meals.last.id + 1 unless @meals.empty?
-  end
-
-  def save_csv
+  def save_to_csv
     CSV.open(@csv_file, "wb") do |csv|
-      csv << %w[id name price]
+      csv << ["id", "name", "price"]
       @meals.each do |meal|
         csv << [meal.id, meal.name, meal.price]
       end
     end
   end
 
+  def load_csv
+    CSV.foreach(@csv_file, headers: :first_row, header_converters: :symbol) do |row|
+      row[:id]    = row[:id].to_i
+      row[:name]  = row[:name]
+      row[:price] = row[:price].to_i
+      @meals << Meal.new(row)
+    end
+    @next_id = @meals.last.id + 1 unless @meals.empty?
+  end
 end
