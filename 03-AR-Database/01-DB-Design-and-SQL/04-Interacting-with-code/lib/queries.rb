@@ -2,6 +2,8 @@ require 'sqlite3'
 
 def artist_count(db)
   # TODO: use `db` to execute an SQL query against the database.
+  count = db.execute("SELECT COUNT(*) AS name FROM artists")
+  count[0][0]
 end
 
 def number_of_rows(db, table_name)
