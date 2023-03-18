@@ -9,7 +9,29 @@ class Post
     @title = attributes[:title]
   end
 
+  def self.build(post)
+    return unless post
+
+    Post.new(
+      {
+        id: post["id"],
+        title: post["title"],
+        url: post["url"],
+        votes: post["votes"]
+      }
+    ) end
+
+  def self.find(id)
+    DB.results_as_hash = true
+    query = "SELECT * FROM posts WHERE id = ?"
+    post = DB.execute(query, id).first
+    # unless post.nil?
+    build(post)
+    # end
+  end
+
   def destroy
-    # TODO: destroy the current instance from the database
+    Post.find(id)
+    DB.execute("DELETE FROM posts WHERE id = #{id}")
   end
 end
