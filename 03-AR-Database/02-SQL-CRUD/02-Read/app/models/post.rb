@@ -24,7 +24,6 @@ class Post
         votes: post["votes"]
       }
     )
-
   end
 
   def self.find(id)
@@ -37,7 +36,7 @@ class Post
   end
 
   def self.all
-  DB.results_as_hash = true
+    DB.results_as_hash = true
     all_posts = DB.execute("SELECT * FROM posts")
     all_posts.map {|post| build(post)}.compact
   end
