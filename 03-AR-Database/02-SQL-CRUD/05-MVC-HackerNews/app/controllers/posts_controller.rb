@@ -1,3 +1,6 @@
+require_relative "../views/posts_view"
+require_relative "../models/post"
+
 class PostsController
   def initialize
     @view = PostsView.new
@@ -9,7 +12,8 @@ class PostsController
 
   def index
     # TODO: implement listing all posts
-  end
+    Post.all
+     end
 
   def create
     # TODO: implement creating a new post
