@@ -4,7 +4,7 @@
 
 class Post
   # TODO
-  attr_accessor :title,:url
+  attr_accessor :title, :url
   attr_reader :id, :votes
 
   def initialize(attributes = {})
@@ -16,6 +16,7 @@ class Post
 
   def self.build(post)
     return unless post
+
     Post.new(
       {
         id: post["id"],
@@ -38,6 +39,6 @@ class Post
   def self.all
     DB.results_as_hash = true
     all_posts = DB.execute("SELECT * FROM posts")
-    all_posts.map {|post| build(post)}.compact
+    all_posts.map { |post| build(post) }.compact
   end
 end
