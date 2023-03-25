@@ -35,7 +35,7 @@ describe "User" do
     expect(user_two.valid?).to eq false
     expect(user_two.errors.messages[:username]).to include "has already been taken"
   end
-end
+
 
 context "BONUS SECTION:" do
   describe User do
@@ -57,4 +57,6 @@ context "BONUS SECTION:" do
       expect(mail_recipient).to eq(user.email)
     end
   end
+end
+
 end

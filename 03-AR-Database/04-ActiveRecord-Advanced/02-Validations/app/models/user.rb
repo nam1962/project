@@ -16,5 +16,4 @@ class User < ActiveRecord::Base
   def strip_email
     self.email = email.strip unless email.nil?
   end
-
 end
