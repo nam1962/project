@@ -1,0 +1,71 @@
+/* Fonts and colors */
+body {
+  color: #494949;
+  font-size: 125%;
+  line-height: 1.6;
+  width: 80%;
+  font-weight: 300;
+  font-family: monospace;
+  margin: 0;
+}
+h1, h2 {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+h2 {
+  color: #A0A0A0;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #4352A1;
+}
+
+/* Custom design */
+.banner {
+  background-image: url("https://source.unsplash.com/random/1000x500");
+  background-size: cover;
+  color: white;
+  padding: 120px 0;
+}
+.banner h1 {
+  font-size: 300%;
+}
+.banner p {
+  font-size: 250%;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.container {
+  width: 700px;
+  margin: 10% ;
+}
+.link-medium {
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+}
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));}
+}
+
+/* Media queries */
+
+
+@media(max-width: 813px) {
+  .container {
+    width: 80%;
+     }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+}
