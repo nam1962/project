@@ -1,28 +1,41 @@
 
-body {
-  background-color: #FFC017;
-  font-family: system-ui;
-  color: #292929;
-  font-size: 20px;
-  letter-spacing: normal;
-  line-height: normal;
+ /* mobiles: */
+ body {
+  margin:40px auto;            /* Center */
+  background-color: #121212;
+  color: #eee;
+  font-size: 125%;             /* Readable */
+  max-width: 80%;             /* Margins */
+  font-family: monospace;
+}
 
+/* desktop */
+@media only screen and (min-width: 813px)
+{
+  body
+  {
+       font-size: 150%;             /* Readable */
+       max-width: 650px;             /* Margins */
+  }
 }
 
 h1, h2, h3 {
-  font-family: serif;
-  color: #404040;
-  text-decoration: none;
-
-}
-
-a{
   font-family: monospace;
-  color: #606060;
+  color: yellow;
   text-decoration: none;
-  font-weight: 900;
 }
 
-a:hover {
-  background-color: bisque;
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: monospace;
+  color: #809fff;
+}
+ /* a:link    {color: yellow;}   /* unvisited */
+ /* a:visited {color: yellow;}*/
+ a:hover   {color: chartreuse;}
+ a:active  {color: red;}
+
+  footer{
+  font-size: 80%;
 }
