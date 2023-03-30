@@ -3,7 +3,7 @@
  body {
   margin:40px auto;            /* Center */
   background-color: #121212;
-  color: #eee;
+  color:snow;
   font-size: 125%;             /* Readable */
   max-width: 80%;             /* Margins */
   font-family: monospace;
@@ -21,7 +21,7 @@
 
 h1, h2, h3 {
   font-family: monospace;
-  color: yellow;
+  color: snow;
   text-decoration: none;
 }
 
@@ -29,13 +29,49 @@ a {
   text-decoration: none;
   font-weight: 700;
   font-family: monospace;
-  color: #809fff;
+  color:  yellow;
 }
- /* a:link    {color: yellow;}   /* unvisited */
+
  /* a:visited {color: yellow;}*/
  a:hover   {color: chartreuse;}
  a:active  {color: red;}
 
   footer{
   font-size: 80%;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+
+.container {
+
+}
+
+.card {
+  margin-bottom: 2%;
+background-color: #212121;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 5%;
+padding-right: 5%;
+border: 1px solid #313131;
+padding-bottom: 2%;
+/*box-shadow: 2px 2px 3px #414141 ;*/
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#text-size {
+  font-size: 150%;
 }
