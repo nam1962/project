@@ -4,7 +4,7 @@ marp: true
 ---
 <!-- _backgroundColor: snow -->
 
-![bg left 100%](Images/vache_eleanor.png)
+![bg left 25%](Images/vache_eleanor.png)
 # Gestion des retours e-commerce
 
 
