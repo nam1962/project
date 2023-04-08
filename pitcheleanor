@@ -1,0 +1,36 @@
+Bonjour à tous, je souhaite vous présenter un projet de développement passionnant pour notre équipe de programmation. Il s'agit d'une application web de gestion des retours de produits e-commerce, conçue avec Ruby on Rails.
+
+Notre objectif est de faciliter la gestion des retours pour les employés d'entrepôt moins expérimentés, ainsi que pour nos équipes de marketing et de relations clients. Nous avons identifié que ce processus peut souvent être complexe et source de frustration, c'est pourquoi nous souhaitons créer une application qui simplifie ce processus.
+
+Le problème que nous cherchons à résoudre concerne la gestion des retours actuelle. Les employés d'entrepôt doivent traiter manuellement chaque retour, et les équipes de vente et de relations clients doivent communiquer les informations à l'entrepôt. Cette situation peut engendrer confusion et désorganisation, menant potentiellement à des erreurs coûteuses.
+
+Notre solution consiste en une application web développée avec Ruby on Rails, qui facilite la gestion des retours. Les employés d'entrepôt pourront saisir aisément les informations de retour, et les équipes de vente et de relations clients pourront suivre facilement les étapes de traitement des retours. L'application conservera toutes les informations pertinentes, telles que les raisons de retour, l'état de retour, les dates, les noms et les numéros de colis. Les employés pourront également ajouter des photos en cas de défaut.
+
+Ce qui rend notre application innovante, c'est sa capacité à résoudre un problème majeur pour notre entreprise tout en étant facile à utiliser pour nos employés. Elle offre également un potentiel d'évolution en tant que plugin WooCommerce et une intégration avec MailPoet à l'avenir.
+
+Concernant le défi de programmation, vous aurez l'opportunité d'appliquer ce que vous avez appris lors des cours LeWagon pour développer une application complète. Vous pourrez mettre en pratique vos compétences en développement Ruby on Rails et en gestion de bases de données pour créer une solution professionnelle qui répond à un véritable problème.
+
+Nous sommes convaincus que ce projet représente une opportunité incroyable pour mettre en pratique nos compétences en programmation, résoudre un problème concret et améliorer l'expérience de nos clients. Nous espérons que vous partagez notre enthousiasme pour ce projet et nous sommes impatients de répondre à toutes vos questions et suggestions lors de la session de questions-réponses.
+
+
+
+Slide 1: Introduction Notre projet est une application web de gestion des retours e-commerce qui aidera les entreprises à gérer efficacement les retours de produits. Ce projet s'aligne avec le contenu que nous apprenons dans notre cours LeWagon, notamment en termes de création d'une application web full-stack utilisant Ruby on Rails et JavaScript.
+
+
+
+Slide 2: Problématique La gestion des retours de produits peut être un problème majeur pour les entreprises e-commerce, car elle peut être chronophage, coûteuse et nécessiter beaucoup d'efforts manuels. Les défis auxquels les entreprises e-commerce sont confrontées lors de la gestion des retours de produits incluent la coordination avec le personnel de l'entrepôt, la gestion de la communication avec les clients et la garantie d'un processus de retour rationalisé et efficace.
+
+
+
+Slide 3: Solution Notre application web offrira une solution à ces problématiques en proposant des fonctionnalités telles que la gestion de tous les aspects du processus de retour, la facilitation de la communication entre les équipes de vente et de l'entrepôt, et la fourniture d'une interface conviviale. Notre application web aura également la capacité de traiter les photos téléchargées par les clients pour faciliter le processus de retour et fournir des mises à jour en temps réel aux clients et au personnel sur le statut des retours.
+
+
+
+Slide 4: Originalité Notre application web se distingue des autres solutions de gestion des retours e-commerce par ses fonctionnalités uniques, telles que la possibilité de télécharger des photos et des fonctionnalités de communication efficaces. Nous appliquerons les concepts que nous apprenons dans LeWagon pour construire une solution innovante à un problème concret. En tirant parti des dernières technologies et des meilleures pratiques en matière de développement web, nous créerons une application web efficace, conviviale et offrant une expérience client fluide.
+
+
+    How will we ensure the app is user-friendly for warehouse staff with limited technical knowledge?
+    What specific Ruby on Rails features or techniques will we be using to develop this webapp?
+    How will we handle picture uploads for product defects and ensure the images are stored securely?
+    Can you provide more details about the potential WooCommerce plugin and MailPoet integration?
+    How will we address potential scalability concerns as the app grows and serves more businesses?
